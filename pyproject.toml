@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "rust_and_python"
+version = "0.1.0"
+description = ""
+authors = ["yuya mat <yuyu@symbol.company>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+maturin = "^0.14.17"
+
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5"
+flake8 = "^3.7.9"
+
+# test module
+pytest = "^5.4.2"
+pytest-xdist = "^1.32.0"
+pytest-freezegun = "^0.4.1"
+
+taskipy = "^1.9.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.22.0"
+
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
+
+[project]
+name = "rust_hello"
+version = "0.1.0"
+description = "Maturin Starter Project w/Poetry"
+authors = [ {name = "kfields", email = "kurtisfields@gmail.com"} ]
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
